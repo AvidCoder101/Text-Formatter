@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text formatter</title>
+    <link rel= "icon" href="https://image.flaticon.com/icons/png/128/3940/3940014.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<style>
+    body {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    background: url('https://cdn.pixabay.com/photo/2017/05/13/00/18/keyboard-2308477__340.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    width: 300px;
+    background: white;
+    color: black;
+    height: 80px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.50);
+    border: 1px solid #555;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+h2 {
+    color: white;
+}
+</style>
+<body>
+    <h2>Type in your words to see them in the Output!</h2>
+    <input type="text" id= "inputField" placeholder="Type in your text"/>
+
+    <button class="btn uppercase red darken-1" style="text-transform: uppercase">abc</button>
+    <button class="btn lowercase green darken-1" style="text-transform: lowercase">abc</button>
+    <button class="btn capitalize purple darken-1" style="text-transform: capitalize">abc</button>
+    <button class="btn bold grey darken-4" style="text-transform: capitalize">B</button>
+    <button class="btn italic grey darken-4" style="font-style: italic;">i</button>
+    <button class="btn underline grey darken-4" style="text-decoration: underline;">abc</button>
+    <p id= "outputField">Output</p>
+
+    <script src="./index.js"></script>
+</body>
+</html>
